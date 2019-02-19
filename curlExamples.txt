@@ -1,0 +1,9 @@
+#Add a blog post
+
+curl -H "Content-Type: application/json" \
+-X POST \
+-d '{"title": "Blog post title", "author":"Diego", "body":"This is a test"}' \
+"http://localhost:8080/api/blog"
+
+#Retrieve blog post (use your created UUID here)
+curl "http://localhost:8080/api/blog/72c377a7-ccb8-4c84-a318-5c529a3f3e63"
